@@ -1,37 +1,38 @@
-//Biblioteca padr„o.
+//Biblioteca padr√£o.
 #include <iostream>
-//Biblioteca padr„o.
+//Biblioteca padr√£o.
 #include <stdlib.h>
+//Evita a repeti√ß√£o do "std::";
 using namespace std;
 
 int main () {
-    //DefiniÁ„o das vari·veis usando double por possuir o dobro da capacidade de um float.
+    //Defini√ß√£o das vari√°veis usando double por possuir o dobro da capacidade de um float.
     double ac1, ac2, af;
-    //Interface para o usu·rio falar quanto tirou na ac1.
+    //Interface para o usu√°rio falar quanto tirou na ac1.
     cout << "Digite a nota da sua ac1: ";
-    //LÍ e armazena a informaÁ„o na vari·vel em quest„o.
+    //L√™ e armazena a informa√ß√£o na vari√°vel em quest√£o.
     cin >> ac1;
     //Interface que pede a nota da ac2.
     cout << "Digite a nota da sua ac2: ";
-    //LÍ e armazena a informaÁ„o na vari·vel em quest„o.
+    //L√™ e armazena a informa√ß√£o na vari√°vel em quest√£o.
     cin >> ac2;
-    //Interface que pergunta quanto vocÍ tirou na AF
+    //Interface que pergunta quanto voc√™ tirou na AF
     cout << "Digite o valor da sua af: ";
-    //LÍ e armazena a informaÁ„o na vari·vel em quest„o.
+    //L√™ e armazena a informa√ß√£o na vari√°vel em quest√£o.
     cin >> af;
-   //EquaÁ„o para definir a mÈdia. Essa em quest„o usa um sistema de pesos nas notas, ent„o foi necess·rio pegar o valor total das vari·veis e multiplicar cada uma por seu peso especÌfico. 
+   //Equa√ß√£o para definir a m√©dia. Essa em quest√£o usa um sistema de pesos nas notas, ent√£o foi necess√°rio pegar o valor total das vari√°veis e multiplicar cada uma por seu peso espec√≠fico. 
    double media = (ac1*1.5 + ac2*3.5 + af*5);
-   //Etapa final onde a mÈdia ser· definida com uma divis„o.
+   //Etapa final onde a m√©dia ser√° definida com uma divis√£o.
    media = (media/10);
-   //Condicional usada para definir se o aluno foi ou n„o aprovado. Esta pede uma mÈdia maior ou igual a 5 para funcionar.
+   //Condicional usada para definir se o aluno foi ou n√£o aprovado. Esta pede uma m√©dia maior ou igual a 5 para funcionar.
    if (media >=5){
-       //Mensagem que ir· aparecer caso o valor da sua mÈdia cumpra o requisito.
-       cout << "Parabens! VocÍ foi aprovado! " << media << endl;
+       //Mensagem que ir√° aparecer caso o valor da sua m√©dia cumpra o requisito.
+       cout << "Parabens! Voc√™ foi aprovado! " << media << endl;
    }
-    //Caso sua mÈdia n„o cumpra a condiÁ„o prim·ria ser· mandado para c· automaticamente.
+    //Caso sua m√©dia n√£o cumpra a condi√ß√£o prim√°ria ser√° mandado para c√° automaticamente.
    else {
-       //Mensagem que aparece caso o valor da sua mÈdia seja menor que 5.
-       cout << "Que pena, vocÍ foi reprovado! " << media << endl;
+       //Mensagem que aparece caso o valor da sua m√©dia seja menor que 5.
+       cout << "Que pena, voc√™ foi reprovado! " << media << endl;
    }
     return 0;
 }
